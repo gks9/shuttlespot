@@ -1,0 +1,108 @@
+.iphone-14-pro-max-1-child {
+  position: absolute;
+  top: 171px;
+  left: 52px;
+  background-color: var(--color-darkslateblue);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
+  width: 335px;
+  height: 243px;
+}
+.welcome1 {
+  margin: 0;
+}
+.welcome-to1 {
+  position: absolute;
+  top: 201px;
+  left: 23px;
+  display: inline-block;
+  width: 397px;
+  height: 100px;
+  text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+}
+.iphone-14-pro-max-1-item {
+  position: absolute;
+  top: 476px;
+  left: 52px;
+  background-color: var(--color-darkslateblue);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
+  width: 335px;
+  height: 386px;
+}
+.kindly-enter-your1 {
+  position: absolute;
+  top: 496px;
+  left: 74px;
+  font-size: var(--font-size-9xl);
+  display: inline-block;
+  width: 291px;
+  height: 63px;
+  text-shadow: 4px 4px 0 transparent;
+  -webkit-text-stroke: 0.5px #fff;
+}
+.name1,
+.regsitration-no1 {
+  position: absolute;
+  top: 607px;
+  left: 84px;
+  font-size: var(--font-size-11xl);
+  display: inline-block;
+  width: 86px;
+  height: 34px;
+}
+.regsitration-no1 {
+  top: 710px;
+  left: 71px;
+  font-size: var(--font-size-6xl);
+  width: 248px;
+  height: 47px;
+}
+.iphone-14-pro-max-1-child1,
+.iphone-14-pro-max-1-inner {
+  position: absolute;
+  top: 652px;
+  left: 84px;
+  background-color: var(--color-white);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+  width: 229px;
+  height: 34px;
+}
+.iphone-14-pro-max-1-child1 {
+  top: 757px;
+  width: 262px;
+  height: 36px;
+}
+.image-1-icon,
+.image-3-icon {
+  position: absolute;
+  top: 12px;
+  left: 346px;
+  width: 73.86px;
+  height: 68px;
+  object-fit: cover;
+}
+.image-3-icon {
+  left: 6px;
+  width: 68px;
+}
+.shuttlespot1 {
+  position: absolute;
+  top: 301px;
+  left: 92px;
+  display: inline-block;
+  width: 246px;
+  height: 62px;
+  text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+}
+.iphone-14-pro-max-1 {
+  position: relative;
+  background: linear-gradient(180deg, #cc53c6, rgba(226, 199, 225, 0));
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 932px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-23xl);
+  color: var(--color-white);
+  font-family: var(--font-marcellus-sc);
+}
