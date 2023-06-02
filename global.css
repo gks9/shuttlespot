@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-marcellus-sc: "Marcellus SC";
+
+  /* font sizes */
+  --font-size-3xl: 22px;
+  --font-size-6xl: 25px;
+  --font-size-11xl: 30px;
+  --font-size-9xl: 28px;
+  --font-size-41xl: 60px;
+  --font-size-23xl: 42px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslateblue: #632579;
+}
