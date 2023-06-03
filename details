@@ -1,0 +1,166 @@
+Scaffold(
+  key: scaffoldKey,
+  backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+  floatingActionButton: FloatingActionButton(
+    onPressed: () async {
+      showModalBottomSheet(
+        isScrollControlled: true,
+        backgroundColor: Colors.transparent,
+        barrierColor: Color(0x230E151B),
+        context: context,
+        builder: (context) {
+          return Padding(
+            padding: MediaQuery.of(context).viewInsets,
+            child: Container(
+              height: double.infinity,
+              child: CreateTaskNewWidget(),
+            ),
+          );
+        },
+      ).then((value) => setState(() {}));
+    },
+    backgroundColor: FlutterFlowTheme.of(context).primary,
+    elevation: 8,
+    child: Icon(
+      Icons.add_rounded,
+      color: FlutterFlowTheme.of(context).white,
+      size: 32,
+    ),
+  ),
+  appBar: AppBar(
+    backgroundColor: FlutterFlowTheme.of(context).primary,
+    automaticallyImplyLeading: false,
+    title: Text(
+      'Shuttle Details',
+      style: FlutterFlowTheme.of(context).displaySmall.override(
+            fontFamily: 'Outfit',
+            color: FlutterFlowTheme.of(context).white,
+          ),
+    ),
+    actions: [],
+    centerTitle: false,
+    elevation: 0,
+  ),
+  body: SafeArea(
+    top: true,
+    child: Column(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Container(
+          width: 441,
+          height: 96,
+          decoration: BoxDecoration(
+            color: FlutterFlowTheme.of(context).secondaryBackground,
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Align(
+                alignment: AlignmentDirectional(-1, 0),
+                child: Text(
+                  '  Distance',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Outfit',
+                        fontSize: 20,
+                      ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0, -1),
+                child: Container(
+                  width: 331,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                  ),
+                  child: Align(
+                    alignment: AlignmentDirectional(0, 0),
+                    child: Text(
+                      '                                                                  0 Km',
+                      style: FlutterFlowTheme.of(context).bodyMedium,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Align(
+          alignment: AlignmentDirectional(-1, 0),
+          child: Container(
+            width: 432,
+            height: 100,
+            decoration: BoxDecoration(
+              color: FlutterFlowTheme.of(context).secondaryBackground,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Align(
+                  alignment: AlignmentDirectional(-1, 0),
+                  child: Text(
+                    '  Estimated Time',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Outfit',
+                          fontSize: 20,
+                        ),
+                  ),
+                ),
+                Container(
+                  width: 284,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                  ),
+                  child: Align(
+                    alignment: AlignmentDirectional(1, 0),
+                    child: Text(
+                      '0 mins',
+                      style: FlutterFlowTheme.of(context).bodyMedium,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Container(
+          width: 443,
+          height: 100,
+          decoration: BoxDecoration(
+            color: FlutterFlowTheme.of(context).secondaryBackground,
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Align(
+                alignment: AlignmentDirectional(-1, 0),
+                child: Text(
+                  '  Seats left',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Outfit',
+                        fontSize: 20,
+                      ),
+                ),
+              ),
+              Container(
+                width: 327,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                ),
+                child: Align(
+                  alignment: AlignmentDirectional(1, 0),
+                  child: Text(
+                    '10',
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    ),
+  ),
+)
